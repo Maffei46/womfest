@@ -52,11 +52,25 @@ export default {
   .luogo{
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: -14px;
+    margin-bottom: -12px;
+    @media screen and (max-width: 466px) {
+      font-size: 1.5rem;
+      margin-bottom: -8px;
+    }
+    @media screen and (max-width: 350px) {
+      font-size: 1.1rem;
+      margin-bottom: -5px;
+    }
   }
   .data{
-    font-size: 3.32rem;
+    font-size: 3.0rem;
     font-weight: 800;
+    @media screen and (max-width: 466px) {
+      font-size: 2.2rem;
+    }
+    @media screen and (max-width: 350px) {
+      font-size: 1.6rem;
+    }
   }
   .socials{
     display: flex;

@@ -57,9 +57,10 @@
     color: white;
     max-width: 900px;
     margin: 0 auto;
-    padding-top: 100px;
     font-size: 10pt;
     position: relative;
+    padding: 0px 20px;
+    padding-top: 100px;
     .backBtn{
         position: absolute;
         top:20px;
@@ -85,6 +86,9 @@
     }
     .img{
         text-align: center;
+        img{
+            max-width: 100%;
+        }
     }
     h1{
         text-align: center;
@@ -100,6 +104,7 @@
     }
     h2{
         font-size: 20pt;
+        line-height: 22px;
         font-weight: 800;
         margin-top: 20px;
         margin-bottom: 5px;

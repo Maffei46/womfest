@@ -22,6 +22,14 @@ export default {
         background-color: rgb(255, 255, 255);
         border-radius: 10px;
         transition-duration: 0.2s;
+        @media screen and (max-width: 466px) {
+            width: 300px;
+            height: 300px;
+        }
+        @media screen and (max-width: 350px) {
+            width: 250px;
+            height: 250px;
+        }
         &:hover{
             transform: rotate(5deg);
             transition-duration: 0.2s;
@@ -37,6 +45,12 @@ export default {
         margin-top: 10px;
         border-radius: 5px;
         transition-duration: 0.2s;
+        @media screen and (max-width: 466px) {
+            font-size: 18pt;
+        }
+        @media screen and (max-width: 350px) {
+            font-size: 15pt;
+        }
         &:hover{
             background-color: rgb(10, 83, 28);
             transition-duration: 0.2s;
@@ -50,12 +64,25 @@ export default {
         text-transform: uppercase;
         margin-top: 5px;
         color: rgb(255, 255, 255);
+        @media screen and (max-width: 466px) {
+            font-size: 25pt;
+        }
+        @media screen and (max-width: 350px) {
+            font-size: 20pt;
+        }
     }
     .data{
         font-size: 20pt;
         font-weight: 300;
         margin-top: -10px;
         color: rgb(240, 240, 240);
+        @media screen and (max-width: 466px) {
+            font-size: 15pt;
+        }
+        @media screen and (max-width: 350px) {
+            font-size: 12pt;
+            margin-top: -5px;
+        }
     }
     
 }
