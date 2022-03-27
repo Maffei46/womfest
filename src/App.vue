@@ -1,32 +1,43 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="bg">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
     </div>
+    
     <router-view/>
+    <Footer />
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+import Footer from '@/components/footer.vue'
+export default {
+    components:{Footer}
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+</script>
+<style lang="scss">
+@import url('./assets/scss/main.scss');
+#app{
+    background: linear-gradient(-45deg, #434343,#000000);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    .bg{
+        height: 100vh;
+        position: fixed;
+    }
 }
 </style>
