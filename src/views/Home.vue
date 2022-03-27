@@ -46,13 +46,13 @@ export default {
   flex-flow: column;
   color: white;
   img{
-    width: 300px;
+    max-width: 100%;
+    //width: 500px;
   }
   .luogo{
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: -14px;
-    margin-top: 20px;
   }
   .data{
     font-size: 3.32rem;
