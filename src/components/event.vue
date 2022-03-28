@@ -38,8 +38,8 @@ export default {
     }
     .button{
         font-size: 23pt;
-        background-color: rgb(17, 126, 44); 
-        color: white;
+        background-color: #FCEA60; 
+        color: rgb(0, 0, 0);
         font-weight: 800;
         width: max-content;
         padding: 5px 20px;
@@ -53,7 +53,7 @@ export default {
             font-size: 15pt;
         }
         &:hover{
-            background-color: rgb(10, 83, 28);
+            background-color: #fcd260;
             transition-duration: 0.2s;
             border-radius: 10px;
             transform: scale(1.05);
@@ -62,16 +62,16 @@ export default {
     .name{
         width: 100%;
         max-width: 400px;
-        font-size: 30pt;
+        font-size: 28pt;
         font-weight: 800;
         text-transform: uppercase;
         margin-top: 5px;
         color: rgb(255, 255, 255);
         @media screen and (max-width: 466px) {
-            font-size: 25pt;
+            font-size: 23pt;
         }
         @media screen and (max-width: 350px) {
-            font-size: 20pt;
+            font-size: 18pt;
         }
     }
     .data{

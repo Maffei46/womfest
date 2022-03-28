@@ -25,8 +25,8 @@ export default {
   data() {
     return {
       events:[
-        {name: 'BNKR44',data:'VENERDì 3 GIUGNO 2022',img:'1.jpeg'},
-        {name: 'TBA',data:'SABATO 4 GIUGNO 2022',img:'2.jpeg'},
+        {name: 'BNKR44 / TBA / TBA',data:'VENERDì 3 GIUGNO 2022',img:'1.jpeg'},
+        {name: 'TBA / TBA / TBA',data:'SABATO 4 GIUGNO 2022',img:'2.jpeg'},
         {name: 'ABBONAMENTO',data:'3/4 GIUGNO 2022',img:'3.jpeg'},
       ]
     }
