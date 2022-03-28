@@ -1,5 +1,6 @@
 <template>
     <div id="partners">
+        <div class="title">PARTNERS</div>
         <div class="line1">
             <div class="img"><img :src="require('@/assets/partners/citta_di_lucca.png')" alt=""></div>
             <div class="img"><img :src="require('@/assets/partners/cass_di_risparmio_di_lucca.png')" alt=""></div>
@@ -30,6 +31,14 @@
     background-color: rgba(255, 255, 255, 0.945);
     border-radius: 20px;
     padding: 20px 60px;
+    position: relative;
+    .title{
+        position: absolute;
+        top:-31px;left:40px;
+        font-size: 25pt;
+        font-weight: 800;
+        color: rgba(255, 255, 255, 0.945);
+    }
     .line1{
         display: flex;
         flex-wrap: wrap;
