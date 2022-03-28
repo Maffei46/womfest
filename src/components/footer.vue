@@ -19,7 +19,6 @@
     column-gap: 100px;
     flex-wrap: wrap;
     row-gap: 20px;
-    
     a{
         transition-duration: 0.2s;
         &:hover{
@@ -29,6 +28,7 @@
         }
     }
     .ele{
+        z-index: 30;
         display: flex;
         column-gap: 10px;
         text-transform: uppercase;

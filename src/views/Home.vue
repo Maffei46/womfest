@@ -52,7 +52,7 @@ export default {
     top:0;
     right:0;
     transform: translateX(20%);
-    z-index: 0;
+    z-index: 1;
     @media screen and (max-width: 1000px) {
       transform: scale(0.8) translateX(30%) translateY(-15%);
     }
@@ -65,7 +65,7 @@ export default {
     top:0;
     left:0;
     transform: translateX(-20%);
-    z-index: 0;
+    z-index: 1;
     @media screen and (max-width: 1000px) {
       transform: scale(0.8) translateX(-30%) translateY(-15%);
     }
