@@ -1,8 +1,10 @@
 <template>
   <div id="home">
+    <div class="rinodx"><img :src="require('@/assets/WM rino.png')" alt=""></div>
+    <div class="rinosx"><img :src="require('@/assets/WM rino2.png')" alt=""></div>
     <img :src="require('@/assets/logo.png')" alt="">
-    <div class="luogo">IPPODROMO CAPRILLI - LIVORNO</div>
-    <div class="data">20/29 AGOSTO 2021</div>
+    <div class="luogo">VILLA BOTTINI - LUCCA</div>
+    <div class="data">3-4 GIUGNO 2022</div>
     <div class="socials">
       <a href="https://www.facebook.com/wommovement/" target="_blank"><img :src="require('@/assets/icons/fb.png')" alt=""></a>
       <a href="https://www.instagram.com/wom_fest/?hl=it" target="_blank"><img :src="require('@/assets/icons/ig.png')" alt=""></a>
@@ -23,9 +25,9 @@ export default {
   data() {
     return {
       events:[
-        {name: 'giorno 1',data:'SABATO 21 AGOSTO 2022'},
-        {name: 'giorno 2',data:'SABATO 22 AGOSTO 2022'},
-        {name: 'giorno 3',data:'SABATO 23 AGOSTO 2022'},
+        {name: 'BNKR44',data:'VENERDì 3 GIUGNO 2022',img:'1.jpeg'},
+        {name: 'TBA',data:'SABATO 4 GIUGNO 2022',img:'2.jpeg'},
+        {name: 'ABBONAMENTO',data:'3/4 GIUGNO 2022',img:'3.jpeg'},
       ]
     }
   },
@@ -45,31 +47,60 @@ export default {
   min-height: 100vh;
   flex-flow: column;
   color: white;
+  .rinodx{
+    position: fixed;
+    top:0;
+    right:0;
+    transform: translateX(20%);
+    z-index: 0;
+    @media screen and (max-width: 1000px) {
+      transform: scale(0.8) translateX(30%) translateY(-15%);
+    }
+    @media screen and (max-width: 850px) {
+      display: none;
+    }
+  }
+  .rinosx{
+    position: fixed;
+    top:0;
+    left:0;
+    transform: translateX(-20%);
+    z-index: 0;
+    @media screen and (max-width: 1000px) {
+      transform: scale(0.8) translateX(-30%) translateY(-15%);
+    }
+    @media screen and (max-width: 850px) {
+      display: none;
+    }
+  }
   img{
     max-width: 100%;
+    z-index: 9;
     //width: 500px;
   }
   .luogo{
-    font-size: 2rem;
+    font-size: 2.6rem;
     font-weight: 600;
     margin-bottom: -12px;
-    @media screen and (max-width: 466px) {
-      font-size: 1.5rem;
+    z-index: 9;
+    @media screen and (max-width: 474px) {
+      font-size: 2rem;
       margin-bottom: -8px;
     }
     @media screen and (max-width: 350px) {
-      font-size: 1.1rem;
+      font-size: 1.5rem;
       margin-bottom: -5px;
     }
   }
   .data{
     font-size: 3.0rem;
     font-weight: 800;
-    @media screen and (max-width: 466px) {
-      font-size: 2.2rem;
+    z-index: 9;
+    @media screen and (max-width: 474px) {
+      font-size: 2.3rem;
     }
     @media screen and (max-width: 350px) {
-      font-size: 1.6rem;
+      font-size: 1.76rem;
     }
   }
   .socials{
@@ -94,7 +125,6 @@ export default {
     padding: 0px 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 50px;
     column-gap: 30px;
     row-gap: 20px;

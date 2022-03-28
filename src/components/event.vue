@@ -1,6 +1,6 @@
 <template>
     <div id="event">
-        <a href=""><div class="img"></div></a>
+        <a href=""><div class="img" :style="'background-image: url(\''+require('@/assets/events/'+event.img)+'\')'"></div></a>
         <div class="name">{{event.name}}</div>
         <div class="data">{{event.data}}</div>
         <a href=""><div class="button">ACQUISTA BIGLIETTO</div></a>
@@ -22,6 +22,7 @@ export default {
         background-color: rgb(255, 255, 255);
         border-radius: 10px;
         transition-duration: 0.2s;
+        background-size: cover;
         @media screen and (max-width: 466px) {
             width: 300px;
             height: 300px;
@@ -59,6 +60,8 @@ export default {
         }
     }
     .name{
+        width: 100%;
+        max-width: 400px;
         font-size: 30pt;
         font-weight: 800;
         text-transform: uppercase;
