@@ -3,7 +3,7 @@
         <a href=""><div class="img" :style="'background-image: url(\''+require('@/assets/events/'+event.img)+'\')'"></div></a>
         <div class="name">{{event.name}}</div>
         <div class="data">{{event.data}}</div>
-        <a href=""><div class="button">ACQUISTA BIGLIETTO</div></a>
+        <a href=""><div class="button">BIGLIETTO PRESTO DISPONIBILE</div></a>
     </div>
 </template>
 
@@ -37,7 +37,8 @@ export default {
         }
     }
     .button{
-        font-size: 23pt;
+        //font-size: 23pt;
+        font-size: 17pt;
         background-color: #FCEA60; 
         color: rgb(0, 0, 0);
         font-weight: 800;
@@ -47,10 +48,12 @@ export default {
         border-radius: 5px;
         transition-duration: 0.2s;
         @media screen and (max-width: 466px) {
-            font-size: 18pt;
-        }
-        @media screen and (max-width: 350px) {
+            //font-size: 18pt;
             font-size: 15pt;
+        }
+        @media screen and (max-width: 375px) {
+            //font-size: 15pt;
+            font-size: 12pt;
         }
         &:hover{
             background-color: #fcd260;
