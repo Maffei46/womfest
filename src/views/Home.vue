@@ -25,9 +25,9 @@ export default {
   data() {
     return {
       events:[
-        {name: 'BNKR44 / TBA / TBA',data:'VENERDì 3 GIUGNO 2022',img:'1.jpeg'},
-        {name: 'TBA / TBA / TBA',data:'SABATO 4 GIUGNO 2022',img:'2.jpeg'},
-        {name: 'ABBONAMENTO',data:'3/4 GIUGNO 2022',img:'3.jpeg'},
+        {name: 'BNKR44 / TBA / TBA',data:'VENERDì 3 GIUGNO 2022',img:'1.jpeg',url:'https://link.dice.fm/Je7132d30cc9'},
+        {name: 'TBA / TBA / TBA',data:'SABATO 4 GIUGNO 2022',img:'2.jpeg',url:'#'},
+        {name: 'ABBONAMENTO',data:'3/4 GIUGNO 2022',img:'3.jpeg',url:'#'},
       ]
     }
   },

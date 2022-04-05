@@ -1,9 +1,9 @@
 <template>
     <div id="event">
-        <a href=""><div class="img" :style="'background-image: url(\''+require('@/assets/events/'+event.img)+'\')'"></div></a>
+        <a :href="event.url" target="blank_"><div class="img" :style="'background-image: url(\''+require('@/assets/events/'+event.img)+'\')'"></div></a>
         <div class="name">{{event.name}}</div>
         <div class="data">{{event.data}}</div>
-        <a href=""><div class="button">BIGLIETTO PRESTO DISPONIBILE</div></a>
+        <a :href="event.url" target="blank_"><div class="button">BIGLIETTO PRESTO DISPONIBILE</div></a>
     </div>
 </template>
 
