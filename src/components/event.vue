@@ -3,7 +3,7 @@
         <a :href="event.url" target="blank_"><div class="img" :style="'background-image: url(\''+require('@/assets/events/'+event.img)+'\')'"></div></a>
         <div class="name">{{event.name}}</div>
         <div class="data">{{event.data}}</div>
-        <a :href="event.url" target="blank_"><div class="button">BIGLIETTO PRESTO DISPONIBILE</div></a>
+        <a :href="event.url" target="blank_"><div class="button">{{event.url=='#'?'BIGLIETTO PRESTO DISPONIBILE':'ACQUISTA BIGLIETTO'}}</div></a>
     </div>
 </template>
 
