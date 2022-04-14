@@ -26,7 +26,7 @@ export default {
     return {
       events:[
         {name: 'BNKR44 / TBA / TBA',data:'VENERDì 3 GIUGNO 2022',img:'1.jpeg',url:'https://link.dice.fm/Je7132d30cc9'},
-        {name: 'TBA / TBA / TBA',data:'SABATO 4 GIUGNO 2022',img:'2.jpeg',url:'#'},
+        {name: 'POP X / TBA / TBA',data:'SABATO 4 GIUGNO 2022',img:'pop_x.jpeg',url:'https://link.dice.fm/udd1df257be7'},
         {name: 'ABBONAMENTO',data:'3/4 GIUGNO 2022',img:'3.jpeg',url:'#'},
       ]
     }

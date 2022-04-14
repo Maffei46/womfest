@@ -65,7 +65,7 @@ export default {
     .name{
         width: 100%;
         max-width: 400px;
-        font-size: 28pt;
+        font-size: 26pt;
         font-weight: 800;
         text-transform: uppercase;
         margin-top: 5px;
