@@ -11,11 +11,13 @@
         </div>
         <div class="line2">
             <div class="img"><img :src="require('@/assets/partners/confcommercio.png')" alt=""></div>
+            <div class="img"><img :src="require('@/assets/partners/ottavo-nano.png')" alt=""></div>
             <div class="img"><img :src="require('@/assets/partners/terigi.png')" alt=""></div>
             <div class="img"><img :src="require('@/assets/partners/frares.png')" alt=""></div>
             <div class="img"><img :src="require('@/assets/partners/labadiola.png')" alt=""></div>
             <div class="img"><img :src="require('@/assets/partners/aci.png')" alt=""></div>
-            <div class="img"><img :src="require('@/assets/partners/keepin.png')" alt=""></div>    
+            <div class="img"><img :src="require('@/assets/partners/keepin.png')" alt=""></div>
+            <div class="img"><img :src="require('@/assets/partners/rock_contest.png')" alt=""></div>    
         </div>
         <div class="line3">
             <div class="img"><img :src="require('@/assets/partners/wom.png')" alt=""></div>
