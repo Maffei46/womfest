@@ -12,6 +12,11 @@
     <div class="events">
       <Event :event="event" v-for="(event,index) in events" :key="index" />
     </div>
+    <div class="areaExpo">
+      <a href="https://forms.gle/GPL5Hf6mV8U2dL64A" target="blank_">
+        <div class="button">ISCRIVITI AREA EXPO <br><span>WØM FEST</span></div>
+      </a>
+    </div>
     <Partners />
   </div>
 </template>
@@ -130,6 +135,39 @@ export default {
     row-gap: 20px;
     flex-wrap: wrap;
     z-index: 10;
+  }
+  .areaExpo{
+    margin-top: 70px;
+    .button{
+        font-size: 17pt;
+        background-color: #FCEA60; 
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+        width: max-content;
+        padding: 5px 20px;
+        margin-top: 10px;
+        border-radius: 5px;
+        transition-duration: 0.2s;
+        line-height: 20px;
+        @media screen and (max-width: 466px) {
+            //font-size: 18pt;
+            font-size: 15pt;
+        }
+        @media screen and (max-width: 375px) {
+            //font-size: 15pt;
+            font-size: 12pt;
+        }
+        &:hover{
+            background-color: #fcd260;
+            transition-duration: 0.2s;
+            border-radius: 10px;
+            transform: scale(1.05);
+        }
+        span{
+          font-size: 20pt;
+          font-weight: 800;
+        }
+    }
   }
 }
 </style>
