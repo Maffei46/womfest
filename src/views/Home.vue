@@ -13,7 +13,7 @@
       <Event :event="event" v-for="(event,index) in events" :key="index" />
     </div>
     <div class="areaExpo">
-      <a href="https://forms.gle/GPL5Hf6mV8U2dL64A" target="blank_">
+      <a href="https://linktr.ee/wom_fest" target="blank_">
         <div class="button">ISCRIVITI AREA EXPO <br><span>WØM FEST</span></div>
       </a>
     </div>
