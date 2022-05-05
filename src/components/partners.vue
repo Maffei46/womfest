@@ -13,6 +13,9 @@
             <div class="img"><img :src="require('@/assets/partners/confcommercio.png')" alt=""></div>
             <div class="img"><img :src="require('@/assets/partners/ottavo-nano.png')" alt=""></div>
             <div class="img"><img :src="require('@/assets/partners/terigi.png')" alt=""></div>
+            <div class="img"><img :src="require('@/assets/partners/luccapromos.png')" alt=""></div>
+            <div class="img"><img :src="require('@/assets/partners/giacomo_puccini.png')" alt=""></div>
+            <div class="img"><img :src="require('@/assets/partners/terigi.png')" alt=""></div>
             <div class="img"><img :src="require('@/assets/partners/frares.png')" alt=""></div>
             <div class="img"><img :src="require('@/assets/partners/labadiola.png')" alt=""></div>
             <div class="img"><img :src="require('@/assets/partners/aci.png')" alt=""></div>
