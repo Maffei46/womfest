@@ -66,9 +66,11 @@ export default {
         width: 100%;
         max-width: 400px;
         font-size: 26pt;
+        line-height: 27px;
         font-weight: 800;
         text-transform: uppercase;
-        margin-top: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         color: rgb(255, 255, 255);
         @media screen and (max-width: 466px) {
             font-size: 23pt;
