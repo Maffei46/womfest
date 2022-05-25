@@ -30,8 +30,8 @@ export default {
   data() {
     return {
       events:[
-        {name: 'BNKR44 / EMMANUELLE / ADELASIA',data:'VENERDì 3 GIUGNO 2022',img:'1.jpeg',url:'https://link.dice.fm/Je7132d30cc9'},
-        {name: 'POP X / PSEUDOSPETTRI / HINDYA',data:'SABATO 4 GIUGNO 2022',img:'pop_x.jpeg',url:'https://link.dice.fm/udd1df257be7'},
+        {name: 'BNKR44 / EMMANUELLE / ADELASIA',data:'VENERDì 3 GIUGNO 2022',img:'1.jpeg',url:'https://linktr.ee/WOMFEST_3GIUGNO'},
+        {name: 'POP X / PSEUDOSPETTRI / HINDYA',data:'SABATO 4 GIUGNO 2022',img:'pop_x.jpeg',url:'https://linktr.ee/WOMFEST_4GIUGNO'},
         {name: 'ABBONAMENTO',data:'3/4 GIUGNO 2022',img:'3.jpeg',url:'https://link.dice.fm/Gwb9OBnDdpb'},
       ]
     }
