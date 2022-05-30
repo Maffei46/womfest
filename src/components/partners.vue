@@ -20,6 +20,8 @@
             <div class="img"><img :src="require('@/assets/partners/aci.png')" alt=""></div>
             <div class="img"><img :src="require('@/assets/partners/keepin.png')" alt=""></div>
             <div class="img"><img :src="require('@/assets/partners/rock_contest.png')" alt=""></div>    
+            <div class="img"><img :src="require('@/assets/partners/LOGO DESK1.png')" alt=""></div>  
+            <div class="img"><img :src="require('@/assets/partners/Logo-Talea_monocromatico-verde.png')" alt=""></div>  
         </div>
         <div class="line3">
             <div class="img"><img :src="require('@/assets/partners/wom.png')" alt=""></div>
