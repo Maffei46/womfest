@@ -6,7 +6,7 @@
         </div>
         <div class="ele">© 2022 WØM FEST</div>
         <div class="ele">P.iva 02462960465</div>
-        <div class="ele">POWERD BY: <a href="https://www.linkedin.com/in/abramo-maffei-515553214/" target="_blank">ABRAMO MAFFEI</a></div>
+        <div class="ele">POWERD BY: <a href="https://www.abramomaffei.com/" target="_blank">ABRAMO MAFFEI</a></div>
     </div>
 </template>
 

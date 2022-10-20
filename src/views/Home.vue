@@ -18,6 +18,12 @@
       </a>
     </div>
     <Partners />
+
+    <div class="areaExpo">
+      <router-link to="/associazione-wom">
+        <div class="button">ASSOCIAZIONE <br><span>WØM</span></div>
+      </router-link>
+    </div>
   </div>
 </template>
 
