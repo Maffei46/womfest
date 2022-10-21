@@ -21,7 +21,7 @@
 
     <div class="areaExpo">
       <router-link to="/associazione-wom">
-        <div class="button">ASSOCIAZIONE <br><span>WØM</span></div>
+        <div class="button">ASSOCIAZIONE <br><span>WOM</span></div>
       </router-link>
     </div>
   </div>
