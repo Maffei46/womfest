@@ -21,7 +21,7 @@ export default {
 <style lang="scss">
 @import url('./assets/scss/main.scss');
 #app{
-    background: linear-gradient(-45deg, #434343,#000000);
+    background: linear-gradient(-45deg, #010029,#00010c);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     @keyframes gradient {

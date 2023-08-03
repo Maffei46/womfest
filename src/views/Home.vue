@@ -1,38 +1,44 @@
 <template>
   <div id="home">
-    <div class="rinodx"><img :src="require('@/assets/WM rino.png')" alt=""></div>
-    <div class="rinosx"><img :src="require('@/assets/WM rino2.png')" alt=""></div>
-    <img :src="require('@/assets/logo.png')" alt="">
-    <div class="luogo">VILLA BOTTINI - LUCCA</div>
-    <div class="data">3-4 GIUGNO 2022</div>
+    <!-- <div class="rinodx"><img :src="require('@/assets/WM rino.png')" alt=""></div>
+    <div class="rinosx"><img :src="require('@/assets/WM rino2.png')" alt=""></div> -->
+    <div class="guitar"><img :src="require('@/assets/guitar.png')" alt=""></div>
+    <img class="logoimg" :src="require('@/assets/A3_WOM23-1.png')" alt="">
+    <div class="luogo">PIAZZA S.FRANCESCO</div>
+    <div class="data">26 AGOSTO 2023</div>
     <div class="socials">
       <a href="https://www.facebook.com/wommovement/" target="_blank"><img :src="require('@/assets/icons/fb.png')" alt=""></a>
       <a href="https://www.instagram.com/wom_fest/?hl=it" target="_blank"><img :src="require('@/assets/icons/ig.png')" alt=""></a>
     </div>
-    <div class="events">
+    <!-- <div class="events">
       <Event :event="event" v-for="(event,index) in events" :key="index" />
-    </div>
-    <div class="areaExpo">
+    </div> -->
+    <!-- <div class="areaExpo">
       <a href="https://linktr.ee/wom_fest" target="blank_">
         <div class="button">ISCRIVITI AREA EXPO <br><span>WØM FEST</span></div>
       </a>
-    </div>
+    </div> -->
+    <Stages />
     <Partners />
 
-    <div class="areaExpo">
+    <!-- <div class="areaExpo">
       <router-link to="/associazione-wom">
         <div class="button">ASSOCIAZIONE <br><span>WOM</span></div>
       </router-link>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import Event from '@/components/event.vue'
+// import Event from '@/components/event.vue'
 import Partners from '@/components/partners.vue'
+import Stages from '@/components/stages.vue'
 export default {
   name: 'Home',
-  components:{Event,Partners},
+  components:{
+    //Event,
+    Stages,
+    Partners},
   data() {
     return {
       events:[
@@ -84,8 +90,41 @@ export default {
       display: none;
     }
   }
-  img{
-    max-width: 100%;
+  .guitar{
+    position: fixed;
+    bottom:0;
+    left:0;
+    z-index: 0;
+    transform: translateY(50%) translateX(-10%);
+    width: 130%;
+    img{
+      width: 120%;
+    }
+    @media screen and (max-width: 1000px) {
+      width: 160%;
+      transform: translateY(45%) translateX(-30%);
+      img{
+      width: 160%;
+      }
+    }
+    @media screen and (max-width: 850px) {
+      width: 180%;
+      transform: translateY(45%) translateX(-40%);
+      img{
+      width: 180%;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      width: 220%;
+      transform: translateY(48%) translateX(-100%);
+      img{
+      width: 250%;
+      }
+    }
+  }
+  .logoimg{
+    max-width: 1200px;
+    width: 90%;
     z-index: 9;
     //width: 500px;
   }
@@ -94,6 +133,9 @@ export default {
     font-weight: 600;
     margin-bottom: -12px;
     z-index: 9;
+    text-shadow: .1em .1em 0 hsl(247, 90%, 8%);
+    margin-top: 80px;
+    color:#7aff7d;
     @media screen and (max-width: 474px) {
       font-size: 2rem;
       margin-bottom: -8px;
@@ -107,6 +149,8 @@ export default {
     font-size: 3.0rem;
     font-weight: 800;
     z-index: 9;
+    text-shadow: .1em .1em 0 hsl(247, 90%, 8%);
+    color:#7aff7d;
     @media screen and (max-width: 474px) {
       font-size: 2.3rem;
     }
@@ -118,6 +162,7 @@ export default {
     display: flex;
     column-gap: 10px;
     margin-top: 10px;
+    z-index: 2;
     a{
       img{
         width: 40px;

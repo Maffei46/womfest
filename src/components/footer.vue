@@ -36,6 +36,7 @@
         font-size: 10pt;
         color: white;
         text-align: center;
+        text-shadow: .1em .1em 1px hsl(247, 90%, 8%);
     }
 }
 </style>
