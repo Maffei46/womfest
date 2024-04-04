@@ -22,12 +22,12 @@
     </div> -->
     <Stages />
 
-    <div class="contest">
+    <div class="contest" v-if="false">
       <div class="title">CONTEST</div>
       <img :src="require('@/assets/2024/contest.png')" alt="">
       <a href="contest2024.pdf" target="_blank"><button>MAGGIORI INFORMAZIONI</button></a>
     </div>
-    <Partners />
+    <Partners v-if="false" />
 
     <!-- <div class="areaExpo">
       <router-link to="/associazione-wom">

@@ -1,7 +1,9 @@
 <template>
     <div id="stages">
         <div class="stage">
-            <img :src="require('@/assets/2024/dargent.png')" alt="">
+            <div class="img"><img :src="require('@/assets/2024/dargent.png')" alt=""></div>
+            <div class="img"><img :src="require('@/assets/2024/sponsors.png')" alt=""></div>
+            
         </div>
         <!-- <div class="stage">
             <div class="stageTitle">LIVE IN STRADA</div>
@@ -26,7 +28,14 @@
         background: #ED6C21;
         border-radius: 4px;
         padding: 10px;
-        max-width: 500px;
+        max-width: 1000px;
+        column-gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        .img{
+            flex:1;
+            min-width: 300px
+        }
         img{
             width: 100%;
         }
