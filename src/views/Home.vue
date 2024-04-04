@@ -2,13 +2,15 @@
   <div id="home">
     <!-- <div class="rinodx"><img :src="require('@/assets/WM rino.png')" alt=""></div>
     <div class="rinosx"><img :src="require('@/assets/WM rino2.png')" alt=""></div> -->
-    <div class="guitar"><img :src="require('@/assets/guitar.png')" alt=""></div>
-    <img class="logoimg" :src="require('@/assets/A3_WOM23-1.png')" alt="">
-    <div class="luogo">PIAZZA S.FRANCESCO</div>
-    <div class="data">26 AGOSTO 2023</div>
+    <!-- <div class="guitar"><img :src="require('@/assets/guitar.png')" alt=""></div> -->
+    <div class="rinosx"><img :src="require('@/assets/2024/lat.png')" alt=""></div>
+    <div class="rinodx"><img :src="require('@/assets/2024/lat_r.png')" alt=""></div>
+    <img class="logoimg" :src="require('@/assets/2024/logo.png')" alt="">
+    <!-- <div class="luogo">PIAZZA S.FRANCESCO</div> -->
+    <!-- <div class="data">26 AGOSTO 2023</div> -->
     <div class="socials">
-      <a href="https://www.facebook.com/wommovement/" target="_blank"><img :src="require('@/assets/icons/fb.png')" alt=""></a>
-      <a href="https://www.instagram.com/wom_fest/?hl=it" target="_blank"><img :src="require('@/assets/icons/ig.png')" alt=""></a>
+      <a href="https://www.facebook.com/wommovement/" target="_blank"><img :src="require('@/assets/2024/fb.png')" alt=""></a>
+      <a href="https://www.instagram.com/wom_fest/?hl=it" target="_blank"><img :src="require('@/assets/2024/ig.png')" alt=""></a>
     </div>
     <!-- <div class="events">
       <Event :event="event" v-for="(event,index) in events" :key="index" />
@@ -19,6 +21,12 @@
       </a>
     </div> -->
     <Stages />
+
+    <div class="contest">
+      <div class="title">CONTEST</div>
+      <img :src="require('@/assets/2024/contest.png')" alt="">
+      <a href="contest2024.pdf" target="_blank"><button>MAGGIORI INFORMAZIONI</button></a>
+    </div>
     <Partners />
 
     <!-- <div class="areaExpo">
@@ -64,30 +72,60 @@ export default {
   min-height: 100vh;
   flex-flow: column;
   color: white;
+  .loghi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .im{
+      max-width: 400px;
+    }
+  }
   .rinodx{
     position: fixed;
     top:0;
     right:0;
+    bottom:0;
     transform: translateX(20%);
-    z-index: 1;
-    @media screen and (max-width: 1000px) {
-      transform: scale(0.8) translateX(30%) translateY(-15%);
+    z-index: 98;
+    @media screen and (max-width: 750px){
+      right: -50px;
     }
-    @media screen and (max-width: 850px) {
-      display: none;
+    @media screen and (max-width: 450px){
+      right: -100px;
+    }
+    // @media screen and (max-width: 1000px) {
+    //   transform: scale(0.8) translateX(30%) translateY(-15%);
+    // }
+    // @media screen and (max-width: 850px) {
+    //   display: none;
+    // }
+    img{
+      height: 100%;
     }
   }
   .rinosx{
     position: fixed;
     top:0;
+    bottom:0;
     left:0;
     transform: translateX(-20%);
     z-index: 1;
-    @media screen and (max-width: 1000px) {
-      transform: scale(0.8) translateX(-30%) translateY(-15%);
+    z-index: 98;
+    @media screen and (max-width: 750px){
+      left: -50px;
     }
-    @media screen and (max-width: 850px) {
-      display: none;
+    @media screen and (max-width: 450px){
+      left: -100px;
+    }
+    // @media screen and (max-width: 1000px) {
+    //   transform: scale(0.8) translateX(-30%) translateY(-15%);
+    // }
+    // @media screen and (max-width: 850px) {
+    //   display: none;
+    // }
+    img{
+      height: 100%;
     }
   }
   .guitar{
@@ -123,7 +161,7 @@ export default {
     }
   }
   .logoimg{
-    max-width: 1200px;
+    max-width: 900px;
     width: 90%;
     z-index: 9;
     //width: 500px;
@@ -219,6 +257,40 @@ export default {
           font-weight: 800;
         }
     }
+  }
+}
+
+.contest{
+  background: #ED6C21;
+  border-radius: 4px;
+  padding: 10px;
+  max-width: 500px;
+  margin-top: 100px;
+  z-index: 99;
+  .title{
+    font-weight: 500;
+    font-size: 2rem;
+    span{
+      font-weight: 200;
+    }
+  }
+  button{
+    background: #0D594C;
+    border-radius: 4px;
+    color: white;
+    border:none;
+    padding: 8px 10px;
+    font-weight: 600;
+    margin-top: 6px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    &:hover{
+      transform: scale(1.1);
+      transition-duration: 0.1s;
+    }
+  }
+  img{
+    width: 100%;
   }
 }
 </style>

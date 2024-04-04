@@ -1,21 +1,15 @@
 <template>
     <div id="stages">
         <div class="stage">
-            <div class="stageTitle">MAIN STAGE</div>
-            <div class="list">
-                <div class="elem">Una <span>LIVE</span></div>
-                <div class="elem">Giulia / Il Corve / Nomida <span>LIVE</span></div>
-                <div class="elem">Pino D'angiò <span>LIVE</span></div>
-                <div class="elem">Bruno Bellissimo <span>DJSET</span></div>
-            </div>
+            <img :src="require('@/assets/2024/dargent.png')" alt="">
         </div>
-        <div class="stage">
+        <!-- <div class="stage">
             <div class="stageTitle">LIVE IN STRADA</div>
             <div class="list">
                 <div class="elem">Luca Giovacchini "in solo"</div>
                 <div class="elem">Volpe</div>
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -27,10 +21,15 @@
     margin-top: 130px;
     flex-wrap: wrap;
     justify-content: center;
+    z-index: 99;
     .stage{
-        background: rgba(5, 0, 65, 0.945);
+        background: #ED6C21;
         border-radius: 4px;
-        padding: 20px 60px 20px 20px;
+        padding: 10px;
+        max-width: 500px;
+        img{
+            width: 100%;
+        }
         .stageTitle{
             font-weight: 800;
             font-size: 25pt;
