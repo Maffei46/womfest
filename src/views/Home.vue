@@ -22,7 +22,7 @@
     </div> -->
     <Stages v-if="true"/>
 
-    <div class="contest">
+    <div class="contest" v-if="false">
       <div class="title">CONTEST</div>
       <img :src="require('@/assets/2024/contest.png')" alt="">
       <!-- <img :src="require('@/assets/2024/loghicontest.pdf')" alt=""> -->
