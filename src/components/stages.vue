@@ -11,11 +11,12 @@
             <div class="img"><img :src="require('@/assets/2024/bnkr_sponsors.png')" alt=""></div>
         </div>
 
-        <router-link to="https://www.mailticket.it/manifestazione/CD39" target="_blank">
+        <a href="https://www.mailticket.it/manifestazione/CD39" target="_blank">
             <div class="buttonLink">
                 <div class="button">ACQUISTA BIGLIETTI</div>
             </div>
-        </router-link>
+        </a>
+
         
         <!-- <div class="stage">
             <div class="stageTitle">LIVE IN STRADA</div>
