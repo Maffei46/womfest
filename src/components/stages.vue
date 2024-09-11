@@ -1,21 +1,34 @@
 <template>
     <div id="stages">
         <div class="stage">
+            <!-- <div class="bigliettiDisponibili">BIGLIETTI DISPONIBILI</div> -->
+            <div class="img"><img :src="require('@/assets/2024/elasi.png')" alt=""></div>
+            <div class="img"><img :src="require('@/assets/2024/elasi_sponsors.png')" alt=""></div>
+        </div>
+        <div class="divider">
+            <div class="line"><hr></div>
+            <div class="text">PASSATI 2024</div>
+            <div class="line"><hr></div>
+        </div>
+        <div class="stage">
+            <!-- <div class="bigliettiDisponibili">BIGLIETTI DISPONIBILI</div> -->
+            <div class="img"><img :src="require('@/assets/2024/bnkr.png')" alt=""></div>
+            <div class="img"><img :src="require('@/assets/2024/bnkr_sponsors.png')" alt=""></div>
+        </div>
+        <div class="stage">
             <div class="img"><img :src="require('@/assets/2024/dargent.png')" alt=""></div>
             <div class="img"><img :src="require('@/assets/2024/sponsors.png')" alt=""></div>
             
         </div>
-        <div class="stage">
-            <div class="bigliettiDisponibili">BIGLIETTI DISPONIBILI</div>
-            <div class="img"><img :src="require('@/assets/2024/bnkr.png')" alt=""></div>
-            <div class="img"><img :src="require('@/assets/2024/bnkr_sponsors.png')" alt=""></div>
-        </div>
+        
 
-        <a href="https://www.mailticket.it/manifestazione/CD39" target="_blank">
+        <!-- <a href="https://www.mailticket.it/manifestazione/CD39" target="_blank">
             <div class="buttonLink">
                 <div class="button">ACQUISTA BIGLIETTI</div>
             </div>
-        </a>
+        </a> -->
+
+        
 
         
         <!-- <div class="stage">
@@ -38,6 +51,24 @@
     flex-wrap: wrap;
     justify-content: center;
     z-index: 99;
+    .divider{
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        .line{
+            width: 100%;
+            hr{
+                border-color: #ED6C21;
+            }
+            
+        }
+        .text{
+            color: #ED6C21;
+            font-weight: bold;
+            font-size: 1.3rem;
+            white-space: nowrap;
+        }
+    }
     .stage{
         background: #ED6C21;
         border-radius: 4px;
