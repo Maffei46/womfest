@@ -9,6 +9,9 @@
 }
 :root{
     --starsColor: rgb(255, 255, 255);
+
+    --bgColor: #f9c70c;
+    --alt1Color: #016fba;
 }
 @import url('./stars.scss');
 a{
@@ -20,5 +23,5 @@ a{
 }
 
 body{
-    background-color: #0D594C;
+    background-color: var(--bgColor);
 }

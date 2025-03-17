@@ -3,9 +3,9 @@
     <!-- <div class="rinodx"><img :src="require('@/assets/WM rino.png')" alt=""></div>
     <div class="rinosx"><img :src="require('@/assets/WM rino2.png')" alt=""></div> -->
     <!-- <div class="guitar"><img :src="require('@/assets/guitar.png')" alt=""></div> -->
-    <div class="rinosx"><img :src="require('@/assets/2024/lat.png')" alt=""></div>
-    <div class="rinodx"><img :src="require('@/assets/2024/lat_r.png')" alt=""></div>
-    <img class="logoimg" :src="require('@/assets/2024/logo.png')" alt="">
+    <div class="rinosx"><img :src="require('@/assets/2025/lateral.png')" alt=""></div>
+    <div class="rinodx"><img :src="require('@/assets/2025/lateral.png')" alt="" style="transform: scaleX(-1);"></div>
+    <img class="logoimg" :src="require('@/assets/2025/logo.png')" alt="">
     <!-- <div class="luogo">PIAZZA S.FRANCESCO</div> -->
     <!-- <div class="data">26 AGOSTO 2023</div> -->
     <div class="socials">
@@ -20,7 +20,7 @@
         <div class="button">ISCRIVITI AREA EXPO <br><span>WØM FEST</span></div>
       </a>
     </div> -->
-    <Stages v-if="true"/>
+    <Stages v-if="false"/>
 
     <div class="contest" v-if="false">
       <div class="title">CONTEST</div>
@@ -162,7 +162,7 @@ export default {
     }
   }
   .logoimg{
-    max-width: 900px;
+    max-width: 1800px;
     width: 90%;
     z-index: 9;
     //width: 500px;
@@ -204,8 +204,9 @@ export default {
     z-index: 2;
     a{
       img{
-        width: 40px;
+        width: 50px;
         transition-duration: 0.2s;
+        filter: invert(1);
       }
       &:hover{
         img{

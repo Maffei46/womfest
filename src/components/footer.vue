@@ -37,9 +37,9 @@
         text-transform: uppercase;
         font-weight: 600;
         font-size: 10pt;
-        color: white;
+        color: black;
         text-align: center;
-        text-shadow: .1em .1em 1px hsl(247, 90%, 8%);
+        text-shadow: .1em .1em 1px hsl(0, 0%, 100%);
     }
 }
 </style>
