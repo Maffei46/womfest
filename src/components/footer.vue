@@ -10,8 +10,18 @@
     </div>
 </template>
 
+<script>
+export default {
+    props:{
+        bgColor:{type: String, default:'white'}
+    }
+}
+</script>
+
 <style lang="scss" scoped>
 #footer{
+    margin-top: 100px;
+    background-color: v-bind(bgColor);
     padding: 50px 20px;
     display: flex;
     justify-content: center;

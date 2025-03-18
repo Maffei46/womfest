@@ -49,13 +49,22 @@
         4. L’interessato ha diritto di opporsi, in tutto o in parte:<br>
         a) per motivi legittimi al trattamento dei dati personali che lo riguardano, ancorché pertinenti allo scopo della raccolta;b) al trattamento di dati personali che lo riguardano a fini di invio di materiale pubblicitario o di vendita diretta o per il compimento di ricerche di mercato o di comunicazione commerciale.
         Per esercitare i propri diritti previsti all’articolo 7 l’interessato dovrà rivolgersi al succitato womfest.it.
+
+        <Footer />
     </div>
 </template>
 
+<script>
+import Footer from '../components/footer.vue';
+export default {
+    components:{Footer}
+}
+</script>
+
 <style lang="scss" scoped>
 #privacyPolicy{
-    color: white;
-    max-width: 900px;
+    color: rgb(26, 26, 26);
+    max-width: 1400px;
     margin: 0 auto;
     font-size: 10pt;
     position: relative;
@@ -88,6 +97,7 @@
         text-align: center;
         img{
             max-width: 100%;
+            filter: invert(1);
         }
     }
     h1{

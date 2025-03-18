@@ -35,6 +35,7 @@
         <div class="button">ASSOCIAZIONE <br><span>WOM</span></div>
       </router-link>
     </div> -->
+    <Footer bgColor="var(--bgColor)" />
   </div>
 </template>
 
@@ -42,12 +43,15 @@
 // import Event from '@/components/event.vue'
 import Partners from '@/components/partners.vue'
 import Stages from '@/components/stages.vue'
+import Footer from '@/components/footer.vue'
+
 export default {
   name: 'Home',
   components:{
     //Event,
     Stages,
-    Partners},
+    Partners,
+    Footer},
   data() {
     return {
       events:[
@@ -62,7 +66,9 @@ export default {
 
 
 <style lang="scss" scoped>
+
 #home{
+  background-color: var(--bgColor);
   padding-top: 100px;
   padding-bottom: 100px;
   display: flex;
