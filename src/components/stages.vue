@@ -2,20 +2,22 @@
     <div id="stages">
         <div class="stage">
             <!-- <div class="bigliettiDisponibili">BIGLIETTI DISPONIBILI</div> -->
-            <div class="img"><img :src="require('@/assets/2024/elasi.png')" alt=""></div>
-            <div class="img"><img :src="require('@/assets/2024/elasi_sponsors.png')" alt=""></div>
+            <div class="img"><img :src="require('@/assets/2025/giorgiopoi.png')" alt=""></div>
+            <!-- <div class="img"><img :src="require('@/assets/2024/elasi_sponsors.png')" alt=""></div> -->
         </div>
-        <div class="divider">
+
+        <div class="divider" v-if="false">
             <div class="line"><hr></div>
             <div class="text">PASSATI 2024</div>
             <div class="line"><hr></div>
         </div>
-        <div class="stage">
+        
+        <div class="stage" v-if="false">
             <!-- <div class="bigliettiDisponibili">BIGLIETTI DISPONIBILI</div> -->
             <div class="img"><img :src="require('@/assets/2024/bnkr.png')" alt=""></div>
             <div class="img"><img :src="require('@/assets/2024/bnkr_sponsors.png')" alt=""></div>
         </div>
-        <div class="stage">
+        <div class="stage" v-if="false">
             <div class="img"><img :src="require('@/assets/2024/dargent.png')" alt=""></div>
             <div class="img"><img :src="require('@/assets/2024/sponsors.png')" alt=""></div>
             
@@ -58,19 +60,19 @@
         .line{
             width: 100%;
             hr{
-                border-color: #ED6C21;
+                border-color: var(--alt1Color);
             }
             
         }
         .text{
-            color: #ED6C21;
+            color: var(--alt1Color);
             font-weight: bold;
             font-size: 1.3rem;
             white-space: nowrap;
         }
     }
     .stage{
-        background: #ED6C21;
+        background: var(--alt1Color);
         border-radius: 4px;
         padding: 10px;
         max-width: 1000px;
@@ -123,7 +125,7 @@
 
     }
     .buttonLink{
-        background: #ED6C21;
+        background: var(--alt1Color);
         width: max-content;
         margin: 0 auto;
         margin-top: -50px;
@@ -134,13 +136,13 @@
         padding: 10px;
         padding-top: 0px;
         .button{
-            background: #ED6C21;
+            background: var(--alt1Color);
             padding: 15px;
             border-radius: 5px;
             transition-duration: 0.1s;
             &:hover{
                 transition-duration: 0.1s;
-                background: #b44f14;
+                background: var(--alt1Color);
             }
         }
         

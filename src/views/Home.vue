@@ -20,7 +20,7 @@
         <div class="button">ISCRIVITI AREA EXPO <br><span>WØM FEST</span></div>
       </a>
     </div> -->
-    <Stages v-if="false"/>
+    <Stages v-if="true"/>
 
     <div class="contest" v-if="false">
       <div class="title">CONTEST</div>
