@@ -54,15 +54,45 @@ export default {
                 padding-top: 30px;
                 padding-bottom: 10px;
                 font-weight: 800;
+                @media only screen and (max-width: 850px) {
+                    font-size: 6rem;
+                }
+                @media only screen and (max-width: 580px) {
+                    font-size: 4rem;
+                }
+                @media only screen and (max-width: 410px) {
+                    font-size: 3rem;
+                }
+
                 span{
                     font-size: 4rem;
                     font-weight: 300;
+                    @media only screen and (max-width: 850px) {
+                        font-size: 3rem;
+                    }
+                    @media only screen and (max-width: 580px) {
+                        font-size: 2rem;
+                    }
+                    @media only screen and (max-width: 410px) {
+                        font-size: 1.5rem;
+                    }
                 }
             }
             .since{
                 font-size:2em;
                 font-weight: 200;
                 padding-bottom: 3px;
+                @media only screen and (max-width: 850px) {
+                    font-size: 1rem;
+                    padding-bottom: 11px;
+                }
+                @media only screen and (max-width: 580px) {
+                    padding-bottom: 18px;
+                }
+                @media only screen and (max-width: 410px) {
+                    font-size: 0.8rem;
+                    padding-bottom: 21px;
+                }
             }
         }
         
