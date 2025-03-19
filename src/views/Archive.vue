@@ -2,7 +2,7 @@
     <div id="Archive">
         <div class="topPart">
             <div class="bar">
-                <div class="name">WØM<span>ARCHIVE</span></div>
+                <div class="name">WØMFEST<span>ARCHIVE</span></div>
                 <div class="since">SINCE 2018</div>
             </div>
             
@@ -54,14 +54,17 @@ export default {
                 padding-top: 30px;
                 padding-bottom: 10px;
                 font-weight: 800;
-                @media only screen and (max-width: 850px) {
+                @media only screen and (max-width: 1120px) {
                     font-size: 6rem;
                 }
-                @media only screen and (max-width: 580px) {
+                @media only screen and (max-width: 940px) {
                     font-size: 4rem;
                 }
-                @media only screen and (max-width: 410px) {
+                @media only screen and (max-width: 630px) {
                     font-size: 3rem;
+                }
+                @media only screen and (max-width: 500px) {
+                    font-size: 2rem;
                 }
 
                 span{
