@@ -2,7 +2,8 @@
     <div id="Archive">
         <div class="topPart">
             <div class="bar">
-                <div class="name">WØMFEST<span>ARCHIVE</span></div>
+                <router-link to="/"><div class="name">WØMFEST<span>ARCHIVE</span></div></router-link>
+                
                 <div class="since">SINCE 2018</div>
             </div>
             

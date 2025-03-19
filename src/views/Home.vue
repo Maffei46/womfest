@@ -35,6 +35,9 @@
         <div class="button">ASSOCIAZIONE <br><span>WOM</span></div>
       </router-link>
     </div> -->
+
+    <router-link to="/archive"><div class="archive"><b>WØMFEST</b><span>ARCHIVE</span></div></router-link>
+    
     <Footer bgColor="var(--bgColor)" />
   </div>
 </template>
@@ -299,6 +302,17 @@ export default {
   }
   img{
     width: 100%;
+  }
+}
+
+.archive{
+  font-size: 4rem;
+  color:black;
+  font-weight: 800;
+  margin-top: 60px;
+  span{
+    font-size: 3rem;
+    font-weight: 400;
   }
 }
 </style>
