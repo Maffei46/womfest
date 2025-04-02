@@ -6,6 +6,12 @@
             <!-- <div class="img"><img :src="require('@/assets/2024/elasi_sponsors.png')" alt=""></div> -->
         </div>
 
+        <div class="stage">
+            <!-- <div class="bigliettiDisponibili">BIGLIETTI DISPONIBILI</div> -->
+            <div class="img"><img :src="require('@/assets/2025/OkGiorgio.png')" alt=""></div>
+            <!-- <div class="img"><img :src="require('@/assets/2024/elasi_sponsors.png')" alt=""></div> -->
+        </div>
+
         <div class="divider" v-if="false">
             <div class="line"><hr></div>
             <div class="text">PASSATI 2024</div>
