@@ -15,11 +15,12 @@
     <!-- <div class="events">
       <Event :event="event" v-for="(event,index) in events" :key="index" />
     </div> -->
-    <!-- <div class="areaExpo">
-      <a href="https://linktr.ee/wom_fest" target="blank_">
-        <div class="button">ISCRIVITI AREA EXPO <br><span>WØM FEST</span></div>
+    <div class="areaExpo">
+      <a href="https://linktr.ee/WOMFEST2025" target="blank_">
+        <div class="button">ACQUISTA <br><span>BIGLIETTI</span></div>
       </a>
-    </div> -->
+    </div>
+
     <Stages v-if="true"/>
 
     <div class="contest" v-if="false">
@@ -239,8 +240,8 @@ export default {
   .areaExpo{
     margin-top: 70px;
     .button{
-        font-size: 17pt;
-        background-color: #FCEA60; 
+        font-size: 3rem;
+        background-color: var(--alt1Color);
         color: rgb(0, 0, 0);
         font-weight: 700;
         width: max-content;
@@ -248,7 +249,8 @@ export default {
         margin-top: 10px;
         border-radius: 5px;
         transition-duration: 0.2s;
-        line-height: 20px;
+        line-height: 2.9rem;
+        color: white;
         @media screen and (max-width: 466px) {
             //font-size: 18pt;
             font-size: 15pt;
@@ -258,13 +260,13 @@ export default {
             font-size: 12pt;
         }
         &:hover{
-            background-color: #fcd260;
+            background-color: var(--alt1Color);
             transition-duration: 0.2s;
             border-radius: 10px;
             transform: scale(1.05);
         }
         span{
-          font-size: 20pt;
+          font-size: 3.5rem;
           font-weight: 800;
         }
     }
