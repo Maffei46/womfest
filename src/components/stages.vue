@@ -3,6 +3,14 @@
         <a href="https://linktr.ee/WOMFEST2025">
             <div class="stage">
                 <!-- <div class="bigliettiDisponibili">BIGLIETTI DISPONIBILI</div> -->
+                <div class="img"><img :src="require('@/assets/2025/wom2025_generic.jpg')" alt=""></div>
+                <!-- <div class="img"><img :src="require('@/assets/2024/elasi_sponsors.png')" alt=""></div> -->
+            </div>    
+        </a>
+
+        <a href="https://linktr.ee/WOMFEST2025">
+            <div class="stage">
+                <!-- <div class="bigliettiDisponibili">BIGLIETTI DISPONIBILI</div> -->
                 <div class="img"><img :src="require('@/assets/2025/giorgiopoi.png')" alt=""></div>
                 <!-- <div class="img"><img :src="require('@/assets/2024/elasi_sponsors.png')" alt=""></div> -->
             </div>    
@@ -12,6 +20,14 @@
             <div class="stage">
                 <!-- <div class="bigliettiDisponibili">BIGLIETTI DISPONIBILI</div> -->
                 <div class="img"><img :src="require('@/assets/2025/OkGiorgio.png')" alt=""></div>
+                <!-- <div class="img"><img :src="require('@/assets/2024/elasi_sponsors.png')" alt=""></div> -->
+            </div>    
+        </a>
+
+        <a href="https://linktr.ee/WOMFEST2025">
+            <div class="stage">
+                <!-- <div class="bigliettiDisponibili">BIGLIETTI DISPONIBILI</div> -->
+                <div class="img"><img :src="require('@/assets/2025/wom2025_partners.jpg')" alt=""></div>
                 <!-- <div class="img"><img :src="require('@/assets/2024/elasi_sponsors.png')" alt=""></div> -->
             </div>    
         </a>
